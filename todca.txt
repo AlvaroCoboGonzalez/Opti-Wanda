@@ -16,7 +16,8 @@ Np = número de postes
 P1 : potencia unitaria de cada luz
 eta = rendimineto de las luces
 P_reff = Potencia de referencia. 
-
+l = largo del campo
+w = ancho del campo
 
 @@@Valores numéricos paramteros: 
 material: acero galvanizado S235JR,  Rp02 = 235 MPa y E_young = 210 GPa 
@@ -33,6 +34,8 @@ P1 = 150 W
 eta = 0.9
 P_reff = 100000W
 V = 52 m/s
+l = 100 m
+w = 70 m
 
 @@@Restricciones:
 mínima altura zona linela poste: h>h0
@@ -83,8 +86,13 @@ Ejs adicionales:
 Corregir la superficie aerodim con un coseno. Sustentacion se incluye en análisis posteriores
 Peso adicional de nieve. peso_unitario = peso_nieve + peso_luz
 Introducir la lingitud del cable en función de la posición de la fuente de alimenación
+%% Si decidimos no hacer esto, se puede justificar que introduciría una asimetría en el resultado,
+   que difiere de las soluciones habituales para este tipo de problemas y que, por tanto, se ha 
+   decidido prescindir de ello (justificación válida para el planteamiento del problema concreto,
+   sin forzar la simetría)
 Restricción de paridad en nº luces 
 Número de postes variable
+Forma del recinto elíptica
 
 #############################################
 Optimización mono-objetivo:
