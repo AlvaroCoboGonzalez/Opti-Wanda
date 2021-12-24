@@ -9,6 +9,9 @@ S_1 = 0.0675;           %m^2
 W_1 = 3*9.81;           %N
 rho_acero = 7850;       %kg/m^3
 Rp02 = 235*10^6;        %Pa
+coef_min = 1.1;         %COEFICIENTE DE MINORACIÓN DE LA RESISTENCIA DEL MATERIAL
+coef_may_perm = 1.35;   %COEFICIENTE DE MAYORACIÓN DE LAS ACCIONES PERMANENTES
+coef_may_var = 1.5;     %COEFICIENTE DE MAYORACIÓN DE LAS ACCIONES VARIABLES
 %energéticas
 P_1 = 150;              %W
 eta_lum = 110;          %lm/W
