@@ -9,6 +9,7 @@ S_1 = 0.0675;           %m^2
 W_1 = 3*9.81;           %N
 rho_acero = 7850;       %kg/m^3
 Rp02 = 235*10^6;        %Pa
+MS = 0.85;
 %energéticas
 P_1 = 150;              %W
 eta_lum = 110;          %lm/W
