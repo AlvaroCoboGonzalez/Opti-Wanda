@@ -3,11 +3,11 @@
 
 % plot(n, f_t(n,h,r,R,rho,Cd,V,S_1,W_1,rho_acero,Rp02))
 
-function t = visibilidad(n,h,r,R,rho,Cd,V,S_1,W_1,rho_acero,Rp02)
+function t = visibilidad(n,h,r,R,rho,Cd,V,S_1,W_1,rho_acero,Rp02,MS)
 
     D = 0.5*rho*(n*S_1)* V^2 * Cd;
     M_y = W_1*n*R + D*(R+h);
-    sigmax_max = 0.85*Rp02;
+    sigmax_max = MS*Rp02;
 
 % 
 %     syms t;
